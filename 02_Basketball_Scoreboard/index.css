@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    background-color: #1B244A;
+    text-align: center;
+}
+
+.container {
+    /* border: 3px dotted white;  /* for identifying borders */
+    display: flex;
+    justify-content: space-around;
+}
+
+h3 {
+    /* border: 3px dotted white;  /* for identifying borders */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #EEEEEE;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 40px;
+    margin: 68px auto 0px auto;
+}
+
+.score_box {
+    /* border: 3px dotted white;  /* for identifying borders */
+    width: 155px;
+    height: 120px;
+    border-radius: 5px;
+    background-color: #080001;
+    margin: 21px auto 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+.score {   
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-weight: 400;
+    font-size: 90px;
+    color: #F94F6D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 117px;
+    height: 120px;
+    margin: 0px;
+}
+
+.btn_box {
+    /* border: 3px dotted white;  /* for identifying borders */
+    width: 155px;
+    height: 45px;
+    margin: 26px auto 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.score_btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    border: 2px solid #9AABD8;
+    margin: 0px;
+    background-color: #1B244A;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    color: #9AABD8;
+}
+
+.reset_btn {
+    width: 80px;
+    height: 45px;
+    border-radius: 5px;
+    border: 2px solid #9AABD8;
+    margin: 26px auto;
+    background-color: #1B244A;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    color: #9AABD8;
+}
+
