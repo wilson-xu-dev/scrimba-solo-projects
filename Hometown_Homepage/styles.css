@@ -1,0 +1,140 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.hero {
+    /* font */
+    color: #FFFFFF;
+    
+    /* background image */
+    /* shorthand: background: url('images/marina_bay.jpg') center/cover no-repeat; */
+    background-image: url('images/marina_bay.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30rem;
+
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1,
+.hero p {
+    background-color: rgba(0, 0, 0, 0.4); /* 0.6 = 60% opaque */
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+}
+
+.hero p {
+    font-size: 1 rem;
+    max-width: 60ch;
+}
+
+
+.activities {
+    background-color: #F1FAEE;
+    padding: 2rem 0;
+    text-align: center;
+
+}
+
+.activities-header {
+    color: #1D3557;
+    margin: 0;
+}
+
+.activities-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+.activity-card {
+    color: #1D3557;       /* inherited by title/desc */
+    max-width: 140px;     /* so your text wraps nicely */
+    text-align: center;
+}
+
+
+.activity-card-img {
+    width: 100px;
+    height:100px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 0.5rem;      /* center the image */
+}
+
+.activity-card-title {
+    font-size: 1rem;
+    margin: 0.5rem 0 0.25rem;
+}
+
+.activity-card-description {
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+#guide-container {
+  position: relative;                /* for the dashed-line pseudo */
+  display: flex;
+  align-items: stretch;              /* so image & text fill the same height */
+  max-width: 400px;                  /* instead of hard width */
+  margin: 50px auto;
+  padding: 16px;
+  background-color: #A8DADC;
+  border-radius: 8px;
+  border-bottom: 2px solid #1D3557;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  gap: 12px;
+}
+
+
+#guide-image {
+  flex: 0 0 100px;   /* fixed 100×100 box */
+  height: 100px;
+  overflow: hidden;  /* clip the img to our rounded corners */
+  border-radius: 5px;
+}
+
+#guide-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* crop to fill */
+}
+
+#guide-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#guide-text h3 {
+  margin: 0 0 8px;
+  color: #1D3557;
+}
+
+#guide-text p {
+  margin: 0 0 8px;
+  font-style: italic;
+  color: #1D3557;
+  flex: 1;             /* take up the middle space */
+}
+
+#guide-text h4 {
+  margin: 0;
+  align-self: flex-end;  /* push it to the bottom-right */
+  color: #1D3557;
+}
